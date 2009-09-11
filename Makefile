@@ -1,4 +1,4 @@
-FILES = The-Enemy-Hebrew.xhtml The-Enemy-English.xhtml 
+FILES = Makefile The-Enemy-Hebrew.xhtml The-Enemy-English.xhtml 
 
 all:
 
