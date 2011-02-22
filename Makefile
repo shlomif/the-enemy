@@ -7,7 +7,7 @@ DOCS_FICTION_XML = $(patsubst %,%.fiction-xml.xml,$(DOCS_BASE))
 DOCS_FICTION_DB5 = $(patsubst %,%.db5.xml,$(DOCS_BASE))
 DOCS_FICTION_XHTML = $(patsubst %,%.fiction-text.xhtml,$(DOCS_BASE))
 
-DOCBOOK5_XSL_STYLESHEETS_PATH := $(HOME)/Download/unpack/file/docbook/docbook-xsl-snapshot
+DOCBOOK5_XSL_STYLESHEETS_PATH := $(HOME)/Download/unpack/file/docbook/docbook-xsl-ns-snapshot
 
 HOMEPAGE := $(HOME)/Docs/homepage/homepage/trunk
 DOCBOOK5_XSL_STYLESHEETS_XHTML_PATH := $(DOCBOOK5_XSL_STYLESHEETS_PATH)/xhtml
