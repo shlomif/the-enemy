@@ -1,4 +1,6 @@
-FILES = Makefile The-Enemy-Hebrew.xhtml The-Enemy-English.xhtml The-Enemy-Hebrew.fiction-text.txt $(DOCS_FICTION_DB5)
+FILES = Makefile $(DOCS_FICTION_XHTML) \
+		The-Enemy-English.xhtml \
+		$(DOCS_FICTION_TEXT) $(DOCS_FICTION_DB5)
 
 DOCS_BASE = The-Enemy-Hebrew
 
