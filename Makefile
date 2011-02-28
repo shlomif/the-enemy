@@ -1,6 +1,7 @@
 FILES = Makefile $(DOCS_FICTION_XHTML) \
 		The-Enemy-English.xhtml \
-		$(DOCS_FICTION_TEXT) $(DOCS_FICTION_DB5)
+		$(DOCS_FICTION_TEXT) $(DOCS_FICTION_DB5) \
+		style.css
 
 DOCS_BASE = The-Enemy-Hebrew
 
