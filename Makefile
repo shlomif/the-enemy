@@ -19,7 +19,7 @@ DOCBOOK5_XSL_STYLESHEETS_XHTML_PATH := $(DOCBOOK5_XSL_STYLESHEETS_PATH)/xhtml
 DOCBOOK5_XSL_STYLESHEETS_FO_PATH := $(DOCBOOK5_XSL_STYLESHEETS_PATH)/fo
 DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET := $(HOMEPAGE)/lib/sgml/shlomif-docbook/xsl-5-stylesheets/shlomif-essays-5-xhtml.xsl
 
-all: $(DOCS_FICTION_XHTML)
+all: $(DOCS_FICTION_XHTML) intermediate/The-Enemy-English.epub
 
 odt: $(DOCS_FICTION_ODT)
 
@@ -39,3 +39,6 @@ $(DOCS_FICTION_XHTML): %.fiction-text.xhtml: %.db5.xml
 
 $(DOCS_FICTION_ODT): $(DOCS_FICTION_DB5)
 	docbook2odf $< -o $@
+
+intermediate/The-Enemy-English.epub : intermediate/The-Enemy-English.db5.xml
+	ruby $(HOME)/Download/unpack/file/docbook/docbook-xsl-ns-snapshot/epub/bin/dbtoepub -o $@ $<

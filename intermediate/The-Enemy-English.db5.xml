@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <article xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="index" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <info><title>The Enemy and How I Helped to Fight it</title></info>
+    <info><title>The Enemy and How I Helped to Fight it</title>
     <authorgroup>
         <authorgroup>
             <author><personname><firstname>Shlomi</firstname><surname>Fish</surname></personname><affiliation>
@@ -572,3 +572,4 @@
   <para>"Damn it!" I said to myself "I was just beginning to warm up&#x2026;"</para>
   <para>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; -- End --</para>
 </section>
+</article>
