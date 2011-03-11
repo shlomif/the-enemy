@@ -1,6 +1,6 @@
 FILES = Makefile $(DOCS_FICTION_XHTML) \
 		The-Enemy-English.xhtml \
-		$(DOCS_FICTION_TEXT) $(DOCS_FICTION_DB5) \
+		$(DOCS_FICTION_TEXT) $(DOCS_FICTION_DB5) $(ENG_EPUB) \
 		style.css \
 		README.html
 
@@ -21,7 +21,9 @@ DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET := $(HOMEPAGE)/lib/sgml/shlomif-docbook/xsl-
 
 ENG_DB_DIR = English-Docbook
 
-all: $(DOCS_FICTION_XHTML) $(ENG_DB_DIR)/The-Enemy-English.epub
+ENG_EPUB = $(ENG_DB_DIR)/The-Enemy-English.epub
+
+all: $(DOCS_FICTION_XHTML) $(ENG_EPUB)
 
 odt: $(DOCS_FICTION_ODT)
 
@@ -42,5 +44,10 @@ $(DOCS_FICTION_XHTML): %.fiction-text.xhtml: %.db5.xml
 $(DOCS_FICTION_ODT): $(DOCS_FICTION_DB5)
 	docbook2odf $< -o $@
 
-$(ENG_DB_DIR)/The-Enemy-English.epub : $(ENG_DB_DIR)/The-Enemy-English.db5.xml
+$(ENG_EPUB) : $(ENG_DB_DIR)/The-Enemy-English.db5.xml
 	ruby $(HOME)/Download/unpack/file/docbook/docbook-xsl-ns-snapshot/epub/bin/dbtoepub -o $@ $<
+
+.PHONY: epub_ff
+
+epub_ff: $(ENG_EPUB)
+	firefox $(ENG_EPUB)
