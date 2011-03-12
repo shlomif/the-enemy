@@ -44,7 +44,14 @@ $(DOCS_FICTION_XHTML): %.fiction-text.xhtml: %.db5.xml
 $(DOCS_FICTION_ODT): $(DOCS_FICTION_DB5)
 	docbook2odf $< -o $@
 
-$(ENG_EPUB) : $(ENG_DB_DIR)/The-Enemy-English.db5.xml
+ENG_DB_PROCESSED = $(ENG_DB_DIR)/PROCESSED_The-Enemy-English.db5.xml
+ENG_DB_XSLT = $(ENG_DB_DIR)/docbook-epub-preproc.xslt
+ENG_DB_SOURCE = $(ENG_DB_DIR)/The-Enemy-English.db5.xml
+
+$(ENG_DB_PROCESSED) : $(ENG_DB_XSLT) $(ENG_DB_SOURCE)
+	xsltproc --output $@ $(ENG_DB_XSLT) $(ENG_DB_SOURCE)
+
+$(ENG_EPUB) : $(ENG_DB_PROCESSED)
 	ruby $(HOME)/Download/unpack/file/docbook/docbook-xsl-ns-snapshot/epub/bin/dbtoepub -o $@ $<
 
 .PHONY: epub_ff
