@@ -53,6 +53,7 @@ $(ENG_DB_PROCESSED) : $(ENG_DB_XSLT) $(ENG_DB_SOURCE)
 	xsltproc --output $@ $(ENG_DB_XSLT) $(ENG_DB_SOURCE)
 
 $(ENG_EPUB) : $(ENG_DB_PROCESSED)
+	jing http://www.docbook.org/xml/5.0/rng/docbook.rng $<
 	ruby $(HOME)/Download/unpack/file/docbook/docbook-xsl-ns-snapshot/epub/bin/dbtoepub -o $@ $<
 
 .PHONY: epub_ff
