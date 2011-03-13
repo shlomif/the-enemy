@@ -54,7 +54,7 @@
         </revhistory>
     </authorgroup>
 </info>
-<preface id="poltical_background">
+<preface xml:id="poltical_background">
     <info><title>Political Background to the Story</title></info>
 
 <para>
@@ -94,7 +94,7 @@ It is at this point in time when this story supposedly takes places.
 </para>
 
 </preface>
-    <chapter id="gone_without_a_trace">
+    <chapter xml:id="gone_without_a_trace">
         <info><title>Gone Without a Trace</title></info>
   <para>I woke up in the morning and went to the post. It was a bright day at the beginning of spring. When I walked down the road that leads to the post, I enjoyed the lively green of the field, before the summer shows its marks. Flowers bloomed there in the colors of white, yellow and violet and I could hear the squeak of the birds that resided on the trees and woke up before morning. Drops of dew shined on the shrubs and flowers, and the ground was still moist from the rain that had fallen there a day before. The sun just began to shine and in the sky there was a war between the light-blue shade brought by the sun and the dark red of the night.</para>
   <para>In my opinion, it was a perfect day to launch missiles at the Enemy’s soldiers. However, that was not what I intended to do that day.</para>
@@ -137,7 +137,7 @@ It is at this point in time when this story supposedly takes places.
   <para>The commander returned his pistol to its sheath, and went back into his office. We heard him write something on his typewriter, and when he exited he placed a letter into the mailbox of the post. We assumed it was a report regarding the successful operation we had just witnessed, which was intended for the Organisation’s headquarters. After he put the letter in the mailbox, he turned towards his office while rubbing his hands. Afterwards, he took out his pistol, turned around and shot a bullet at his head.</para>
   <para>After the other ex-Member and I witnessed all this, we shrugged, turned around and continued to walk towards the village.</para>
   </chapter>
-  <chapter id="return_from_the_cold">
+  <chapter xml:id="return_from_the_cold">
       <info><title>The Terrorist that Returned from the Cold</title></info>
   <para>After we arrived at the village, we parted and each one of us returned to his house. It was approximately 7 am, when I opened the door of mine. No one was in the living room, so I sat on the coach, took off my shoes and, as I was used to, placed my feet on the table. Then I remembered that such an action was not appropriate for someone who lives in the house, so I took my feet off the table, put my shoes back on, and placed my feet back on the table.</para>
   <para>I started to hum a popular tune, like I used to do many times after I returned home after an exhausting day of work at the Organisation. I must note that despite my extraordinary intelligence, even I sometimes forget stuff. In this case I forgot that during the previous times, I returned home only during the evenings. </para>
@@ -217,7 +217,7 @@ It is at this point in time when this story supposedly takes places.
   </blockquote>
   <para>After I considered it during the evening and discussed it with the members of my family, I finally decided that I do want to go there and meet with them. The next day, I traveled to the airport by car, and boarded an airplane that flew there. </para>
   </chapter>
-  <chapter id="crying_wolf">
+  <chapter xml:id="crying_wolf">
       <info><title>Crying Wolf.</title></info>
   <para>The flight lasted only two hours, and the airplane landed at an airport near the capital city of the Supporter. A car of the Supporter’s army waited for me there, and it drove me to the chief headquarters of the military. On the way, I had the chance to watch the view around the car.</para>
   <para>The Supporter Country belongs to the same part of the world as my country, but because they have an even greater talent of causing the other part of the world to hate them, I realized that the economical state of things I saw outside the car was even worse than that of my country. Poverty and hunger were seen almost everywhere.</para>
@@ -248,7 +248,7 @@ It is at this point in time when this story supposedly takes places.
   <para>“Why is it so important?”</para>
   <para>“Why, it means that meanwhile you have 82,440 or 82,441 extra books you can read at bedtime if you can’t fall asleep!”</para>
   </chapter>
-  <chapter id="shield_of_democracy">
+  <chapter xml:id="shield_of_democracy">
       <info><title>An Encounter with the Shield of Democracy</title></info>
   <para>They gave me a ride to the airport where I boarded the first plane that flew back to my country. I arrived home at night-time, after I took the car ride from the airport back to the village. Since nobody was awake except my father, I immediately went to sleep. I assumed I could wait until tomorrow to tell my experiences from the trip.</para>
   <para>At eight o’clock, I was awaken by an increasing noise that I managed to identify as that of vehicles, as well as of talking and adjustment of recording and broadcasting equipment. When I went outside I saw that all the field outside the village was full with broadcasting-vehicles of various media networks. According to the emblems on the vehicles, I recognised that most of them belonged to companies from the other part of the world. A large number of reporters, interviewers, camera-men and technicians stood outside the vehicles and prepared themselves for broadcasting. The whole place was abuzz.</para>
@@ -297,7 +297,7 @@ It is at this point in time when this story supposedly takes places.
   <para>Anyway, I eventually got tired of this multi-sided negotiation, and decided to take the most attractive offer up to then. This offer included a very large amount of money, even relative to what people of the other part of the world are used to. Moreover, it included a flight to one of the big cities there, and an accommodation at a five star hotel, at the expense of the media company of course. There I had to be interviewed at an evening show of one of the most famous hosts in the other part of this world. This was a host of whom I was particularly fond. The main reason for that was that I had never seen any of her shows and so did not change my initial opinion.</para>
   <para>So it happened that I had to leave my country for the second time that week. After I packed my belongings, and said goodbye to my family and my neighbours, I went to the airport in a car, which was also prepared and financed by the media company. At the airport I boarded a plane that flew towards the city in which the interview was about to take place.</para>
   </chapter>
-  <chapter id="star_is_born">
+  <chapter xml:id="star_is_born">
       <info><title>A Star is Born. Maybe.</title></info>
   <para>The flight that lasted 11 hours exhausted me completely and I was glad that they took me straight to the hotel, where I fell asleep right after lying on the bed. After I woke up at a late hour of the morning, I ordered breakfast, and then decided to go on a half tour-half shopping spree in the city. Even though I was supposed to get most of the money only after the interview, I had a good amount of money that was given to me in advance. The show for which I was going to be interviewed, was scheduled for that night, and I understood that I had very little time for touring and shopping.</para>
   <para>The tour of the city was very interesting, and I was able to see wealth and luxury that I never had a chance to see, at least not since the time I was a little boy, before my country was torn by guerilla organisations such as the Organisation. The luxury of the hotel was also way beyond what I was used to in my house, but I was sure that in the other part of the world, most people could not afford themselves such luxury in their houses either.</para>
@@ -406,7 +406,7 @@ It is at this point in time when this story supposedly takes places.
   <para>Then, one of the production people approached her and gave her several video cassettes. “Here”, she addressed me as she gave me one of the cassettes. “This is a taping of the show which we prepared for the guests.”</para>
   <para>“Well, I don't have a VCR at home right now, but thanks, anyway.” I thanked her and started to walk in order to get out of the studio. But then I stopped for a moment and turned to her: “By the way,” I said, “I still haven't understood why the questions you asked me during the first part of the interview were more personal than the questions you asked me at the second one.”</para>
   </chapter>
-  <chapter id="to_the_lion_den">
+  <chapter xml:id="to_the_lion_den">
       <info><title>To the Lion's Den</title></info>
   <para>The Limousine drove me back to the hotel and there I went to sleep, after barely taking off my clothes. I slept a lot that night. When I woke up in the morning it was already Ten O'clock, and I decided to order a small breakfast to my room. The flight back home was only due in the evening, so I had plenty of time; usually I would have used the opportunity to continue my tour of the metropolis, but the interview and the preparations for it exhausted me physically and mentally.</para>
   <para>Therefore I decided to stay in my room and watch television. I was happy for the chance to see so many series at once, something that was not usually possible in the village. When I saw sitcoms I decided that I'll keep trying to guess what the next punch-line would be. All in all, I was successful in 23.3 percent of the times. Not bad for a beginner.</para>
@@ -443,7 +443,7 @@ It is at this point in time when this story supposedly takes places.
   <para>I went back to the hotel, and extended my stay (out of my own packet this time) - it was hard to know how long they will consider if to let me in the Enemy's country. I decided to continue my tour of the city, and returned to the hotel only in the evening. Afterwards, I was informed at the reception that I got a message from the Enemy's embassy which informed me that I was allowed to enter the Enemy's country.</para>
   <para>So I went the other day's morning to the Embassy and filled all the other necessary forms. After the visit to the Embassy, I managed to order one of the last tickets to a flight that left that very evening. I went after a few hours to the airport, where after longer than usual arrangements (due to the special permit I was given), I boarded an airplane that flew directly to the Enemy's country.</para>
   </chapter>
-  <chapter id="interview_with_the_enemy">
+  <chapter xml:id="interview_with_the_enemy">
       <info><title>Interviewing with the Enemy</title></info>
   <para>After I landed in the airport, I reserved a hotel room in one of the main cities in the Enemy's country and took a cab that went there. On the way I was able to see the view around, and despite the closeness to my country, it was much different from what was known to me. I'm not talking about the climate - the country was simply more developed. The economy of the Enemy's country is far from being perfect, but it is still considered to be one of the countries of the other part of the world.</para>
   <para>After I got up in the morning, and started to tour it (with a direct intention to gather intelligence information), I noticed that the atmosphere there was not much different from what I remembered in my country. However, it bothered me that all the people I asked accepted Aristotle's Organum without a doubt. I assumed that that what would happen, but I hope the publication of my book will change this fact even there.</para>
@@ -489,7 +489,7 @@ It is at this point in time when this story supposedly takes places.
   <para>“That won't be necessary. I'm afraid I'm out of questions to ask you.”</para>
   <para>“Excellent.” I replied, “Because I'm out of replies too. I made an effort that they will be as to the point and as informative as possible, but at a certain point, I too ran out of available knowledge.”</para>
   </chapter>
-  <chapter id="with_enemies_like_this">
+  <chapter xml:id="with_enemies_like_this">
       <info><title>With Enemies Like This, Who Needs Friends?</title></info>
   <para>After they took me out of the building of the intelligence agency, I decided to continue my tour of the Enemy's country with the emphasis on collecting important intelligence information in indirect means. I started my intelligence work in a visit I conducted the next day's morning in one of the water parks of the country. I always wanted to visit a place like that and to amuse myself in it, and I assumed I can conduct some serious espionage over there. I continued with guided tours in the main cities and in the ancient cities, a visit to the theme park, and meals at fancy restaurants. One of the most dangerous espionage missions I took was a guided tour for expert hikers that included cliff-hanging. Of course the rest of the tourists that participated in the tour could have done the same intelligence work I did, but they were not aware of the great intelligence potential that was inherited in it.</para>
   <para>After I completed all those missions I possessed a large amount of intelligence information about the Enemy. The only fact that could shadow the success of my mission was that that information was not substantially different from the information I had before I visited its country. In any case, all those missions exhausted me and I decided to continue in the tour in a less intensive pace; I decided that I'll just tour the cities of the country in my own pace, without a defined cause.</para>
@@ -528,7 +528,7 @@ It is at this point in time when this story supposedly takes places.
   <para>I saw there were no further questions and so I got off the speaker's stage to the sound of the hand-clapping of the audience. After I shook the hands of the professors who organised the study day, and stayed to talk with them a little, I went on my way.</para>
   <para>The next day I saw a picture of me giving the speech in the university appear in the front page of the main newspapers, and from what I understood, a videotape of the lecture was distributed to the various broadcasting networks in the world. I thought about claiming percentage off the profit to myself, but eventually I reached the conclusion that the profits from the book, that will naturally include the speech, will compensate for the anguish.</para>
   </chapter>
-  <chapter id="return_home">
+  <chapter xml:id="return_home">
   <info><title>The Return Home</title></info>
   <para>Two days after the study day, I decided to return home, and therefore I travelled by buses until the northern border of the Enemy's country, in order to cross the border to my country. The last bus stopped right next to the border pass that allowed passage from the Enemy's country to the security zone in the south of my country, that as I mentioned before the Enemy had under its control. Actually, citizens of my country who inhabit the security zone make constant use of this border-pass, in order to work in the sovereign area of the Enemy's country.</para>
   <para>The border guards did not detain me for long after they understood I was the citizen of the country in the other side of the border, but they advised me to get out of the zone they possessed as soon as possible. I took one organised ride that took me outside the security zone, and then I found another car that was about to go in the direction of my village and took it. After I went off the car, I walked for a short while by foot until I reached the outskirts of my village at the late afternoon.</para>
@@ -564,7 +564,7 @@ It is at this point in time when this story supposedly takes places.
   <para>“In what did you consider to deal with?” My friend asked.</para>
   <para>“Honestly, I didn't really give it a lot of thought. I'm so talented that I don't have enough talent to determine which one of my talents I should deal with.”</para>
   </chapter>
-  <chapter id="epilogue">
+  <chapter xml:id="epilogue">
   <info><title>Epilogue</title></info>
   <para>He sat on a chair under an arbour in a middle of a European-styled garden. He was a rather short man with black hair and a small and funny black mustache. The minute I saw him he already finished eating his breakfast, and he drank coffee and read the morning paper while wearing army uniform. It was Adolf Hitler. I decided to approach him.</para>
   <para>“Sir, ” I told him, “I am a big fan of yours.”</para>
