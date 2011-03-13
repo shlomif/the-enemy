@@ -2,15 +2,21 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="index">
     <info><title>The Enemy and How I Helped to Fight it</title>
     <authorgroup>
-        <author><personname><firstname>Shlomi</firstname><surname>Fish</surname></personname><affiliation>
+        <author>
+            <personname>
+                <firstname>Shlomi</firstname>
+                <surname>Fish</surname>
+            </personname>
+            <affiliation>
                 <address>
                     <email>shlomif@iglu.org.il</email>
                     <uri type="homepage" xlink:href="http://www.shlomifish.org/">Shlomi Fish's Homepage</uri>
                 </address>
-            </affiliation></author>
-     </authorgroup>
-     <copyright>
-         <year>2004</year>
+            </affiliation>
+        </author>
+    </authorgroup>
+    <copyright>
+        <year>2004</year>
         <holder>Shlomi Fish</holder>
     </copyright>
     <legalnotice>
