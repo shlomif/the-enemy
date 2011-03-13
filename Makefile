@@ -1,6 +1,7 @@
 FILES = Makefile $(DOCS_FICTION_XHTML) \
 		The-Enemy-English.xhtml \
-		$(DOCS_FICTION_TEXT) $(DOCS_FICTION_DB5) $(ENG_EPUB) \
+		$(DOCS_FICTION_TEXT) $(DOCS_FICTION_DB5) \
+		$(ENG_EPUB) $(ENG_DB_PROCESSED) \
 		style.css \
 		README.html
 
