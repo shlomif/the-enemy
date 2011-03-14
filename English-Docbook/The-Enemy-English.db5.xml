@@ -46,17 +46,6 @@
             on many aspects of politics, logic and Objectivist philosophy. 
         </para>
     </abstract>
-    <revhistory>
-        <revision>
-            <revnumber>60</revnumber>
-            <date>2011-03-10</date>
-            <authorinitials>shlomif</authorinitials>
-            <revremark>
-                Started working on the DocBook/XML version of this 
-                story ( “The Enemy and How I Helped to Fight it” ).
-            </revremark>
-        </revision>
-    </revhistory>
 </info>
 <preface xml:id="poltical_background">
     <info><title>Political Background to the Story</title></info>
