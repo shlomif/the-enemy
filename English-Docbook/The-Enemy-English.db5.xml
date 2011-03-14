@@ -642,4 +642,41 @@ It is at this point in time when this story supposedly takes places.
   <para>“Damn it!” I said to myself “I was just beginning to warm up…”</para>
   <para><emphasis role="bold">End</emphasis></para>
 </chapter>
+<appendix xml:id="about_author">
+    <info><title>About the Author</title></info>
+
+    <para>
+        Shlomi Fish is an Israeli software developer, essayist and writer,
+        who is passionate about Free and Open Source Software and other
+        manifestations of individual rights and freedom as well as honesty,
+        transparency and openness, in digital culture, culture in general,
+        or otherwise.
+    </para>
+
+    <para>
+        He maintains a personal web site at 
+        <link xlink:href="http://www.shlomifish.org/">http://www.shlomifish.org/</link>,
+        which collects most of the good works of culture and code, that he has
+        worked on since he set it up in 1997, several weblogs and an otherwise
+        active online presence.
+    </para>
+
+    <para>
+        While he considers himself a Randian Objectivist and a libertarian,
+        he feels free to deviate or even criticise his peers and mentors based
+        on reason, progress and other sources of enlightenment and believes
+        that as existence is dynamic, they will involve, combined, and
+        progress. 
+    </para>
+    
+    <para>
+        He has written the first few versions of <emphasis>The Enemy and How
+            I Helped to Fight it</emphasis> in 1997, when he was 19 drawing
+        from many inspirations, and has continued to improve them since. One
+        can find his other novellas, screenplays, and shorter works,
+        as well as essays and articles, on his site, which he hopes to make
+        available as electronic books in the
+        near future.
+    </para>
+</appendix>
 </book>
