@@ -675,8 +675,67 @@ It is at this point in time when this story supposedly takes places.
         from many inspirations, and has continued to improve them since. One
         can find his other novellas, screenplays, and shorter works,
         as well as essays and articles, on his site, which he hopes to make
-        available as electronic books in the
-        near future.
+        available as electronic books in the near future.
     </para>
+</appendix>
+<appendix xml:id="acknowledgements">
+    <info><title>Acknowledgements</title></info>
+
+    <para>
+        The author would like to give his kind acknowledgements to:
+    </para>
+
+    <itemizedlist>
+
+<listitem>
+<para>
+<emphasis role="bold">Tal</emphasis> for saying the very first version of the story (which was
+much shorter than the existing one and ended up being discarded) was not too 
+good, and for passing some critique on the first chapter of the second version
+which the current version is based on. (Along with his younger brother.)
+</para>
+</listitem>
+
+<listitem>
+<para>
+    <emphasis role="bold">Alexey</emphasis> from "Smart Link" - for reading an 
+    early version in Hebrew, and giving some useful comments.
+</para>
+</listitem>
+
+<listitem>
+<para>
+<link xlink:href="http://www.zak.co.il/"><emphasis role="bold">Omer Zak</emphasis></link> - for reading and
+commenting on an early draft of the story.
+</para>
+</listitem>
+
+<listitem>
+
+<para>
+<link xlink:href="http://www.MiriamErezTranslations.co.il/"><emphasis role="bold">Miriam Erez 
+Translations</emphasis></link> - for providing many useful grammar, punctuation, and
+syntax corrections to the Hebrew version of the story (which were applied to
+the English version).
+</para>
+
+</listitem>
+
+<listitem>
+    <para>
+        <emphasis role="bold">Cory Doctorow</emphasis> - for successfully
+        fighting for putting Creative Commons works and such that are free of 
+        copyright-protection on Amazon.com's E-book store, and for his
+        important activism for digital rights, in general.
+    </para>
+</listitem>
+<listitem>
+    <para>
+        And finally - all the people who have fully read "The Enemy", whether
+        in Hebrew and/or in English and commented on it.
+    </para>
+</listitem>
+</itemizedlist>
+
 </appendix>
 </book>
