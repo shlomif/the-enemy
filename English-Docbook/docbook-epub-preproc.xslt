@@ -35,8 +35,8 @@
     </para>
     <para>
         Note that the original text of the story and its DocBook source is
-        under "CC-by-sa", but the author relicensed final EPUB to "CC-by-nc-sa"
-        upon publishing.
+        under "CC-by-sa", but the author relicensed the final EPUB to 
+        "CC-by-nc-sa" upon publishing.
     </para>
 </xsl:template>
 
