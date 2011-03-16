@@ -18,7 +18,7 @@ DOCBOOK5_XSL_STYLESHEETS_PATH := $(HOME)/Download/unpack/file/docbook/docbook-xs
 HOMEPAGE := $(HOME)/Docs/homepage/homepage/trunk
 DOCBOOK5_XSL_STYLESHEETS_XHTML_PATH := $(DOCBOOK5_XSL_STYLESHEETS_PATH)/xhtml
 DOCBOOK5_XSL_STYLESHEETS_FO_PATH := $(DOCBOOK5_XSL_STYLESHEETS_PATH)/fo
-DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET := $(HOMEPAGE)/lib/sgml/shlomif-docbook/xsl-5-stylesheets/shlomif-essays-5-xhtml.xsl
+DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET := $(HOMEPAGE)/lib/sgml/shlomif-docbook/xsl-5-stylesheets/shlomif-essays-5-xhtml-onechunk.xsl
 
 ENG_DB_DIR = English-Docbook
 
@@ -40,7 +40,8 @@ $(DOCS_FICTION_XML): %.fiction-xml.xml: %.fiction-text.txt
 	-o $@ $<
 
 $(DOCS_FICTION_XHTML): %.fiction-text.xhtml: %.db5.xml
-	xsltproc --path $(DOCBOOK5_XSL_STYLESHEETS_XHTML_PATH) -o $@ $(DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET) $<
+	xsltproc --stringparam root.filename $@ --path $(DOCBOOK5_XSL_STYLESHEETS_XHTML_PATH) -o $@ $(DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET) $<
+	mv -f $@.html $@
 
 $(DOCS_FICTION_ODT): $(DOCS_FICTION_DB5)
 	docbook2odf $< -o $@
