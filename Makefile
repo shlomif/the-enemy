@@ -1,9 +1,10 @@
 FILES = Makefile $(DOCS_FICTION_XHTML) \
-		The-Enemy-English.xhtml \
 		$(DOCS_FICTION_TEXT) $(DOCS_FICTION_DB5) \
-		$(ENG_EPUB) $(ENG_DB_PROCESSED) $(ENG_DB_SOURCE) \
+		$(ENG_EPUB) $(ENG_DB_PROCESSED) $(ENG_DB_SOURCE) $(ENG_XHTML) \
 		style.css \
 		README.html
+
+# The-Enemy-English.xhtml \
 
 DOCS_BASE = The-Enemy-Hebrew
 
@@ -23,8 +24,9 @@ DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET := $(HOMEPAGE)/lib/sgml/shlomif-docbook/xsl-
 ENG_DB_DIR = English-Docbook
 
 ENG_EPUB = $(ENG_DB_DIR)/The-Enemy-English.epub
+ENG_XHTML = $(ENG_DB_DIR)/The-Enemy-English.xhtml
 
-all: $(DOCS_FICTION_XHTML) $(ENG_EPUB)
+all: $(DOCS_FICTION_XHTML) $(ENG_EPUB) $(ENG_XHTML)
 
 odt: $(DOCS_FICTION_ODT)
 
@@ -56,6 +58,11 @@ $(ENG_DB_PROCESSED) : $(ENG_DB_XSLT) $(ENG_DB_SOURCE)
 $(ENG_EPUB) : $(ENG_DB_PROCESSED)
 	jing http://www.docbook.org/xml/5.0/rng/docbook.rng $<
 	ruby $(HOME)/Download/unpack/file/docbook/docbook-xsl-ns-snapshot/epub/bin/dbtoepub -o $@ $<
+
+$(ENG_XHTML) : $(ENG_DB_PROCESSED)
+	jing http://www.docbook.org/xml/5.0/rng/docbook.rng $<
+	xsltproc --stringparam root.filename $@ --path $(DOCBOOK5_XSL_STYLESHEETS_XHTML_PATH) -o $@ $(DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET) $<
+	mv -f English-Docbook/English-Docbook/The-Enemy-English.xhtml.html $@
 
 .PHONY: epub_ff
 
