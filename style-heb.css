@@ -3,3 +3,7 @@ body
     direction: rtl;
     text-align: right;
 }
+p
+{
+	font-size: 120%;
+}
