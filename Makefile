@@ -1,7 +1,7 @@
 FILES = Makefile $(DOCS_FICTION_XHTML) \
 		$(DOCS_FICTION_TEXT) $(DOCS_FICTION_DB5) \
 		$(ENG_EPUB) $(ENG_DB_PROCESSED) $(ENG_DB_SOURCE) $(ENG_XHTML) \
-		style.css \
+		style.css style-heb.css \
 		README.html
 
 # The-Enemy-English.xhtml \
@@ -42,7 +42,11 @@ $(DOCS_FICTION_XML): %.fiction-xml.xml: %.fiction-text.txt
 	-o $@ $<
 
 $(DOCS_FICTION_XHTML): %.fiction-text.xhtml: %.db5.xml
-	xsltproc --stringparam root.filename $@ --path $(DOCBOOK5_XSL_STYLESHEETS_XHTML_PATH) -o $@ $(DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET) $<
+	xsltproc --stringparam root.filename $@ \
+		--stringparam html.stylesheet "style-heb.css" \
+		--path $(DOCBOOK5_XSL_STYLESHEETS_XHTML_PATH) \
+		-o $@ \
+		$(DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET) $<
 	mv -f $@.html $@
 
 $(DOCS_FICTION_ODT): $(DOCS_FICTION_DB5)
