@@ -33,7 +33,7 @@
      showgrid="false"
      inkscape:zoom="0.76171165"
      inkscape:cx="-21.441676"
-     inkscape:cy="229.97621"
+     inkscape:cy="19.922972"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:current-layer="svg2"
@@ -66,7 +66,9 @@
      width="749.6275"
      height="777.19696"
      x="-446.36313"
-     y="-79.426376" />
+     y="-79.426376"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Eclipse;-inkscape-font-specification:Eclipse"
@@ -79,7 +81,7 @@
        x="-366.28033"
        y="410.26025" /></text>
   <g
-     id="g3923">
+     id="g3947">
     <g
        transform="translate(-143.09877,5.251331)"
        id="g3838">
@@ -5397,7 +5399,7 @@ AABJRU5ErkJggg==
          y="174.58551"
          x="-415.70261"
          id="tspan3867"
-         sodipodi:role="line">And How </tspan><tspan
+         sodipodi:role="line">and How </tspan><tspan
          id="tspan3869"
          y="258.14508"
          x="-415.70261"
