@@ -31,7 +31,7 @@ all: $(DOCS_FICTION_XHTML) $(ENG_EPUB) $(ENG_XHTML)
 odt: $(DOCS_FICTION_ODT)
 
 upload:
-	rsync -v --progress -a $(FILES) $${HOMEPAGE_SSH_PATH}/the-enemy-prantemp/
+	rsync -v --progress -a $(FILES) $${HOMEPAGE_SSH_PATH}/$(THE_ENEMY_DEST)/
 
 $(DOCS_FICTION_DB5): %.db5.xml: %.fiction-xml.xml 
 	perl -MXML::Grammar::Fiction::App::ToDocBook -e 'run()' -- \
