@@ -11,6 +11,7 @@
     <xsl:choose>
         <xsl:when test="local-name() = 'legalnotice'">
             <legalnotice>
+                <xsl:copy-of select="@*"/>
                 <xsl:call-template name="nc_legal_notice" />
             </legalnotice>
         </xsl:when>
