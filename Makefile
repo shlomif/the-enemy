@@ -77,5 +77,7 @@ openoffice: $(ENG_HTML_FOR_OOO)
 
 .PHONY: epub_ff
 
-epub_ff: $(ENG_EPUB)
+epub: $(ENG_EPUB)
+
+epub_ff: epub
 	firefox $(ENG_EPUB)
