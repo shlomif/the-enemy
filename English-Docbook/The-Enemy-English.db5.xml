@@ -711,6 +711,15 @@ recommended read.
 
 <listitem>
 <para>
+One of my high school classmates' brother, who served in the Israeli military 
+as a medic, got killed in a Hizbullah infiltration, an incident which provided
+some necessary emotional fuel to writing <emphasis role="italics">The
+Enemy</emphasis>. To avoid defamation, I won't mention them by name.
+</para>
+</listitem>
+
+<listitem>
+<para>
 <emphasis role="bold">Tal</emphasis> for saying the very first version of the story (which was
 much shorter than the existing one and ended up being discarded) was not too 
 good, and for passing some critique on the first chapter of the second version
@@ -750,6 +759,25 @@ have also been applied to the English version).
 fighting for putting Creative Commons works and such that are free of 
 copyright‐protection on Amazon.com’s E‐book store, and for his
 important activism for digital rights, in general.
+</para>
+
+</listitem>
+
+<listitem>
+
+<para>
+<emphasis role="bold">Robert</emphasis> — for pointing me to a workaround for
+generating a valid EPUB from this story's DocBook 5/XML source. (by using the 
+<literal>docbook-xsl</literal> stylesheets instead of the 
+<literal>docbook-xsl-ns</literal> ones
+</para>
+</listitem>
+
+<listitem>
+
+<para>
+<emphasis role="bold">Mehrzad</emphasis> — for starting to read the story and
+commenting on the “Political Background to the Story” preface.
 </para>
 
 </listitem>
