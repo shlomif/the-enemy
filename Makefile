@@ -60,12 +60,23 @@ ENG_HTML_FOR_OOO = $(ENG_DB_DIR)/The-Enemy-English.for-openoffice.html
 $(ENG_DB_PROCESSED) : $(ENG_DB_XSLT) $(ENG_DB_SOURCE)
 	xsltproc --output $@ $(ENG_DB_XSLT) $(ENG_DB_SOURCE)
 
+# DOCBOOK_RNG = http://www.docbook.org/xml/5.0/rng/docbook.rng
+
+DOCBOOK_RNG = ./rng/docbook.rng
+
+JING = jing $(DOCBOOK_RNG)
+
+# XSL_SNAPSHOT_HOME = $(HOME)/Download/unpack/file/docbook/docbook-xsl-ns-snapshot
+XSL_SNAPSHOT_HOME = $(HOME)/Download/unpack/file/docbook/docbook-xsl-snapshot/
+
+EPUB_SCRIPT = $(XSL_SNAPSHOT_HOME)/epub/bin/dbtoepub
+
 $(ENG_EPUB) : $(ENG_DB_PROCESSED)
-	jing http://www.docbook.org/xml/5.0/rng/docbook.rng $<
-	ruby $(HOME)/Download/unpack/file/docbook/docbook-xsl-ns-snapshot/epub/bin/dbtoepub -o $@ $<
+	$(JING) $<
+	ruby $(EPUB_SCRIPT) -o $@ $<
 
 $(ENG_XHTML) : $(ENG_DB_PROCESSED)
-	jing http://www.docbook.org/xml/5.0/rng/docbook.rng $<
+	$(JING) $<
 	xsltproc --stringparam root.filename $@ --path $(DOCBOOK5_XSL_STYLESHEETS_XHTML_PATH) -o $@ $(DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET) $<
 	mv -f English-Docbook/English-Docbook/The-Enemy-English.xhtml.html $@
 
