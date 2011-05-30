@@ -12,6 +12,8 @@ DOCS_FICTION_TEXT = $(patsubst %,%.fiction-text.txt,$(DOCS_BASE))
 DOCS_FICTION_XML = $(patsubst %,%.fiction-xml.xml,$(DOCS_BASE))
 DOCS_FICTION_DB5 = $(patsubst %,%.db5.xml,$(DOCS_BASE))
 DOCS_FICTION_XHTML = $(patsubst %,%.fiction-text.xhtml,$(DOCS_BASE))
+DOCS_FICTION_FO = $(patsubst %,%.fiction-text.fo,$(DOCS_BASE))
+DOCS_FICTION_RTF = $(patsubst %,%.fiction-text.rtf,$(DOCS_BASE))
 DOCS_FICTION_ODT = $(patsubst %,%.odt,$(DOCS_BASE))
 
 DOCBOOK5_XSL_STYLESHEETS_PATH := $(HOME)/Download/unpack/file/docbook/docbook-xsl-ns-snapshot
@@ -20,6 +22,7 @@ HOMEPAGE := $(HOME)/Docs/homepage/homepage/trunk
 DOCBOOK5_XSL_STYLESHEETS_XHTML_PATH := $(DOCBOOK5_XSL_STYLESHEETS_PATH)/xhtml
 DOCBOOK5_XSL_STYLESHEETS_FO_PATH := $(DOCBOOK5_XSL_STYLESHEETS_PATH)/fo
 DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET := $(HOMEPAGE)/lib/sgml/shlomif-docbook/xsl-5-stylesheets/shlomif-essays-5-xhtml-onechunk.xsl
+DOCBOOK5_XSL_CUSTOM_FO_XSLT_STYLESHEET := $(HOMEPAGE)/lib/sgml/shlomif-docbook/xsl-5-stylesheets/shlomif-essays-5-fo.xsl
 
 ENG_DB_DIR = English-Docbook
 
@@ -48,6 +51,18 @@ $(DOCS_FICTION_XHTML): %.fiction-text.xhtml: %.db5.xml
 		-o $@ \
 		$(DOCBOOK5_XSL_CUSTOM_XSLT_STYLESHEET) $<
 	mv -f $@.html $@
+
+$(DOCS_FICTION_FO): %.fiction-text.fo : %.db5.xml
+	xsltproc --stringparam root.filename $@ \
+		--stringparam html.stylesheet "style-heb.css" \
+		--path $(DOCBOOK5_XSL_STYLESHEETS_FO_PATH) \
+		-o $@ \
+		$(DOCBOOK5_XSL_CUSTOM_FO_XSLT_STYLESHEET) $<
+
+$(DOCS_FICTION_RTF): %.rtf: %.fo
+	fop -fo $< -rtf $@
+
+rtf: $(DOCS_FICTION_RTF)
 
 $(DOCS_FICTION_ODT): $(DOCS_FICTION_DB5)
 	docbook2odf $< -o $@
@@ -92,3 +107,7 @@ epub: $(ENG_EPUB)
 
 epub_ff: epub
 	firefox $(ENG_EPUB)
+
+%.show:
+	@echo "$* = $($*)"
+
