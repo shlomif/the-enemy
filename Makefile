@@ -71,6 +71,7 @@ ENG_DB_PROCESSED = $(ENG_DB_DIR)/PROCESSED_The-Enemy-English.db5.xml
 ENG_DB_XSLT = $(ENG_DB_DIR)/docbook-epub-preproc.xslt
 ENG_DB_SOURCE = $(ENG_DB_DIR)/The-Enemy-English.db5.xml
 ENG_HTML_FOR_OOO = $(ENG_DB_DIR)/The-Enemy-English.for-openoffice.html
+HEB_HTML_FOR_OOO = The-Enemy-Hebrew.for-openoffice.html
 
 $(ENG_DB_PROCESSED) : $(ENG_DB_XSLT) $(ENG_DB_SOURCE)
 	xsltproc --output $@ $(ENG_DB_XSLT) $(ENG_DB_SOURCE)
@@ -98,8 +99,13 @@ $(ENG_XHTML) : $(ENG_DB_PROCESSED)
 $(ENG_HTML_FOR_OOO): $(ENG_XHTML)
 	cat $< | perl -lne 'print unless m{\A<\?xml}' > $@
 
-openoffice: $(ENG_HTML_FOR_OOO)
-	ooffice3.2 $<
+$(HEB_HTML_FOR_OOO): $(DOCS_FICTION_XHTML)
+	cat $< | perl -lne 's{(</title>)}{$${1}<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />}; print unless m{\A<\?xml}' > $@
+
+oohtml: $(ENG_HTML_FOR_OOO) $(HEB_HTML_FOR_OOO)
+
+openoffice: oohtml
+	ooffice3.2 $(ENG_HTML_FOR_OOO)
 
 .PHONY: epub_ff
 
